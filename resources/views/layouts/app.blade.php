@@ -70,7 +70,10 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
-                                    <li><a href="{{ url('/profile') }}"><i class="fa fa-btn fa-cog"></i>Setting</a></li>
+                                    <li><a href="{{ url('/profile/create') }}"><i class="fa fa-btn fa-cog"></i>Create Profile</a></li>
+                                    <li><a href="{{ url('/profile') }}"><i class="fa fa-btn fa-cog"></i>view Profile</a></li>
+                                    {{--<li><a href="/profile/{{$profiles->id}}"><i class="fa fa-btn fa-cog"></i>view Profile</a></li>--}}
+
                                 </ul>
                             </li>
                         @endif

@@ -19,6 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/profile', function () {
-    return view('profile.profile');
-});
+Route::resource('/profile', 'ProfileController');
+
